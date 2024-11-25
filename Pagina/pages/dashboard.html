@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard - DR. Nancy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- Estilos Personalizados -->
+    <style>
+      /* Panel lateral fijo */
+      .sidepanel {
+        width: 250px;
+        height: 100vh; /* Altura completa */
+        position: fixed;
+        background-color: #111;
+        padding-top: 20px;
+        color: white;
+      }
+
+      .sidepanel a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .sidepanel a:hover {
+        background-color: #575757;
+      }
+
+      /* Contenido principal ajustado */
+      .main-content {
+        margin-left: 250px; /* Deja espacio para el panel lateral */
+      }
+
+      /* Estilo del encabezado */
+      .header {
+        background-color: #575757;
+        padding: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Sidebar fijo -->
+    <div class="sidepanel">
+      <h2 class="text-center">Dashboard</h2>
+      <a href="../index.html">Inicio</a>
+      <a href="#resumen">Resumen</a>
+      <a href="#pacientes">Pacientes</a>
+      <a href="#citas">Citas</a>
+      <a href="#reportes">Reportes</a>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="main-content">
+      <!-- Encabezado -->
+      <div class="header">
+        <h1>Panel de Control</h1>
+      </div>
+
+      <!-- Secciones de Contenido -->
+      <div class="container mt-4">
+        <div class="row">
+          <!-- Tarjeta 1: Total Pacientes -->
+          <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Total Pacientes</h5>
+                <p class="card-text">120</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Citas Pendientes -->
+          <div class="col-md-4">
+            <div class="card text-white bg-warning mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Citas Pendientes</h5>
+                <p class="card-text">15</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3: Nuevas Consultas -->
+          <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Nuevas Consultas</h5>
+                <p class="card-text">30</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sección de Reportes -->
+        <div class="row mt-4">
+          <div class="col-md-12">
+            <h2 id="reportes">Reportes Mensuales</h2>
+            <p>Gráficos o tablas resumen de las actividades del mes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
