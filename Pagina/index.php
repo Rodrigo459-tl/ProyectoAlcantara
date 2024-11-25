@@ -1,16 +1,3 @@
-<?php
-require_once("./config/Connect.php");
-$connection = new Connect();
-
-require_once("./pages/Conexion/Tabla_paciente.php");
-$idPaciente = 2;
-
-//Instancia modelo
-$tabla_paciente = new Tabla_paciente();
-$data = $tabla_paciente->GetPaciente($idPaciente);
-//print_r($data);
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 

@@ -1,5 +1,5 @@
 -----------------------Ingreso de Datos----------------------------------------------------------------------------------
--- Antecedentes Patologicos:
+-- c:
 -- 1 Diabetes
 -- 2 hipertencion
 -- 3 enfermedades cronicas

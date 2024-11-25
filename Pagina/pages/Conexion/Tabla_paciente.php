@@ -1,5 +1,5 @@
 <?php
-require_once("../../config/Connect.php");
+require_once("Connect.php");
 
 class Tabla_paciente
 {
@@ -14,7 +14,7 @@ class Tabla_paciente
     }
     public function GetPaciente($idPaciente)
     {
-        $sql = "SELECT CONCAT (p.Nombre, ' ', p.AP, ' ', p.AM) as NombreCompleto
+        $sql = "SELECT *
         FROM
             cita c
             JOIN tratamiento t
