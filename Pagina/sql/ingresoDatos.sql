@@ -1,5 +1,17 @@
 -----------------------Ingreso de Datos----------------------------------------------------------------------------------
--- c:
+--Paciente:
+-- nombre
+-- AP
+-- AM
+-- FechaN
+-- Edad
+-- Municipio
+-- Colonia
+-- Estado
+-- Calle
+-- Correo electronico
+
+-- Antecedentes Patologicos:
 -- 1 Diabetes
 -- 2 hipertencion
 -- 3 enfermedades cronicas
@@ -21,6 +33,13 @@
 -- 3 fuma (cuantos cigarros al dia)
 -- 4 consume alcohol
 -- 5 aprieta o rechina los dientes
+
+-- cita:
+-- Motivo
+-- Estado
+-- Fecha
+-- Hora
+-- Metodo_Agenda
 
 INSERT INTO Paciente (Nombre, AP, AM, Correo_Electronico, FechaN, Municipio, Colonia, Calle, Estado) VALUES
 ('Juan', 'Pérez', 'Gómez', 'juan.perez@example.com', '1990-03-15', 'Tlaxcala', 'Centro', 'Calle 1', 'Tlaxcala'),

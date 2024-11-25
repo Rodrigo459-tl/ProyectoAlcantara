@@ -82,6 +82,7 @@ CREATE TABLE
         idTratamiento INT NOT NULL,
         idHistorial INT NOT NULL,
         idPaciente INT NOT NULL,
+        Motivo VARCHAR(200) NOT NULL,
         Fecha DATE NOT NULL,
         Hora TIME NOT NULL,
         Metodo_Agenda VARCHAR(50) NOT NULL,

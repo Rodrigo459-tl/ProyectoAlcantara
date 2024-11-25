@@ -160,7 +160,31 @@ $data = $tabla_paciente->GetPaciente($idPaciente);
 
         <div id="historiales" class="section active">
           <h2>Gestión de Historiales</h2>
-          <div class="row">
+
+          <div class="row m-1">
+            <div class="col-12 bg-white">
+              <form>
+                <legend style="text-align: center;">Antecedentes Patologicos</legend>
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small-->
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="row m-1">
             <div class="col-6">
               <form id="pacienteForm">
                 <legend>Antecedentes Patologicos</legend>
@@ -194,7 +218,7 @@ $data = $tabla_paciente->GetPaciente($idPaciente);
             </div>
           </div>
 
-          <div class="row">
+          <div class="row m-1">
             <div class="col-12">
               Citas previas
             </div>
