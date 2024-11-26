@@ -26,7 +26,7 @@
 INSERT INTO roles (id_rol, rol) VALUES
 (100, 'Administrador'),
 (10, 'Operador'),
-(1, 'Usuario');
+(1, 'paciente');
 
 INSERT INTO Paciente (Nombre, AP, AM, Correo_Electronico, Contrasenia, FechaN, Municipio, Colonia, Calle, Estado, idRol) VALUES
 ('Carlos', 'Pérez', 'López', 'admin@admin', 'admin', '1985-03-15', 'Puebla', 'El Carmen', 'Av. Hidalgo', 'Puebla', 100),
