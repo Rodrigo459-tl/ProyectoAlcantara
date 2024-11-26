@@ -583,7 +583,6 @@ ul.conat_info li a:hover {
 
 .blu_colo i {
      background-color: #071451
-     
 }
 
 .yell_colo i {
@@ -635,7 +634,8 @@ ul.conat_info li a:hover {
      border-radius: 25px;
      padding: 35px 0;
 }
-.vehicles_truck p{
+
+.vehicles_truck p {
      color: #071451;
 }
 
