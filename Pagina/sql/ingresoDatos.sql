@@ -22,10 +22,16 @@
 -- 4 consume alcohol
 -- 5 aprieta o rechina los dientes
 
-INSERT INTO Paciente (Nombre, AP, AM, Correo_Electronico, FechaN, Municipio, Colonia, Calle, Estado) VALUES
-('Juan', 'Pérez', 'Gómez', 'juan.perez@example.com', '1990-03-15', 'Tlaxcala', 'Centro', 'Calle 1', 'Tlaxcala'),
-('María', 'López', 'Ramírez', 'maria.lopez@example.com', '1985-07-22', 'Apizaco', 'San Miguel', 'Calle 2', 'Tlaxcala'),
-('Carlos', 'González', 'Martínez', 'carlos.gonzalez@example.com', '1998-01-10', 'Chiautempan', 'El Carmen', 'Calle 3', 'Tlaxcala');
+
+INSERT INTO roles (id_rol, rol) VALUES
+(100, 'Administrador'),
+(10, 'Operador'),
+(1, 'Usuario');
+
+INSERT INTO Paciente (Nombre, AP, AM, Correo_Electronico, Contrasenia, FechaN, Municipio, Colonia, Calle, Estado, idRol) VALUES
+('Carlos', 'Pérez', 'López', 'admin@admin', 'admin', '1985-03-15', 'Puebla', 'El Carmen', 'Av. Hidalgo', 'Puebla', 100),
+('Lucía', 'Ramírez', 'Gómez', 'operador@operador', 'operador', '1990-07-22', 'Tlaxcala', 'Centro', 'Calle Juárez', 'Tlaxcala', 10),
+('Pedro', 'Sánchez', 'Méndez', 'usuario@usuario', 'usuario', '2000-05-30', 'Apizaco', 'San Pablo', 'Av. Reforma', 'Tlaxcala', 1);
 
 INSERT INTO Historial (idPaciente) VALUES (1), (2), (3);
 

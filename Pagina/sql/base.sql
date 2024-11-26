@@ -6,6 +6,22 @@ SET
 
 USE ExpedienteMedico;
 
+-- USUARIOS
+CREATE USER 'doctora'@'localhost' IDENTIFIED BY 'doctora';
+CREATE USER 'recepcion'@'localhost' IDENTIFIED BY 'recepcion';
+CREATE USER 'usuario'@'localhost' IDENTIFIED BY 'usuario';
+
+-- PRIVILEGIOS
+GRANT ALL PRIVILEGES ON ExpedienteMedico.* TO 'doctora'@'localhost';
+GRANT UPDATE, INSERT, SELECT ON ExpedienteMedico.* TO 'recepcion'@'localhost';
+GRANT UPDATE, SELECT ON ExpedienteMedico.* TO 'usuario'@'localhost';
+
+-- ROLES
+CREATE TABLE Roles (
+    id_rol INT(5) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    rol VARCHAR(10) NOT NULL
+);
+
 -- Paciente
 CREATE TABLE
     Paciente (
@@ -14,11 +30,14 @@ CREATE TABLE
         AP VARCHAR(50) NOT NULL,
         AM VARCHAR(50) NOT NULL,
         Correo_Electronico VARCHAR(100) NOT NULL,
+        Contrasenia VARCHAR(255) NOT NULL,
         FechaN DATE NOT NULL,
         Municipio VARCHAR(50) NOT NULL,
         Colonia VARCHAR(50) NOT NULL,
         Calle VARCHAR(50) NOT NULL,
-        Estado VARCHAR(50) NOT NULL
+        Estado VARCHAR(50) NOT NULL,
+        idRol INT NOT NULL,
+        FOREIGN KEY (idRol) REFERENCES roles (idRol) ON DELETE CASCADE ON UPDATE CASCADE
     );
 
 -- Historial
